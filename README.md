@@ -8,6 +8,7 @@ Shows how one can use the AppMsg library to create a persistent toast/notificati
 
 ###Sample
 
+To show the notification
 ```java
 MessageUtils.showAppMsg(this, new View.OnClickListener() {
                     @Override
@@ -15,4 +16,9 @@ MessageUtils.showAppMsg(this, new View.OnClickListener() {
                         Toast.makeText(MainActivity.this, "I have clicked the app message", Toast.LENGTH_SHORT).show();
                     }
                 });
+```
+
+To hide the notification
+```java
+MessageUtils.cancelAll(this);
 ```
