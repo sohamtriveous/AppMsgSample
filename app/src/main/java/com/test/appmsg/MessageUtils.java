@@ -19,11 +19,10 @@ public class MessageUtils {
         provided.getView().findViewById(R.id.sticky_freeversion).setOnClickListener(onClickListener);
 
         // create {@link AppMsg} with specify type
-        AppMsg appMsg = provided;
-        appMsg.setPriority(priority);
-        appMsg.setLayoutGravity(BOTTOM);
+        provided.setPriority(priority);
+        provided.setLayoutGravity(BOTTOM);
 
-        appMsg.show();
+        provided.show();
     }
 
     public static void cancelAll(final Activity activity) {
